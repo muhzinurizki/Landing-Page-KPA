@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion, Variants } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import { ArrowRight, FileText, ShieldCheck } from 'lucide-react';
 
 const Hero: React.FC = () => {
