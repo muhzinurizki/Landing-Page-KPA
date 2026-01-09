@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, ArrowUpRight, Plus } from 'lucide-react';
+import { ArrowUpRight, Plus } from 'lucide-react';
 
 const projects = [
   {
