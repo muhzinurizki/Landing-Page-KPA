@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { ArrowRight, FileText, ShieldCheck } from 'lucide-react';
 
 const Hero: React.FC = () => {
@@ -15,10 +15,17 @@ const Hero: React.FC = () => {
     },
   };
 
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } },
-  };
+  const itemVariants: Variants = { // Tambahkan tipe : Variants di sini
+  hidden: { opacity: 0, y: 20 },
+  visible: { 
+    opacity: 1, 
+    y: 0, 
+    transition: { 
+      duration: 0.8, 
+      ease: "easeOut" // Gunakan string untuk keamanan maksimal
+    } 
+  },
+};
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-[#0B0F1A] selection:bg-blue-500/30">
